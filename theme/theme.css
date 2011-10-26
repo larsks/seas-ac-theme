@@ -1,3 +1,7 @@
+body {
+  width: 960px;
+}
+
 #content {
   border: thin solid black;
   padding: 1ex;
@@ -11,5 +15,26 @@
 #right {
   width: 800px;
   margin-left: 150px;
+}
+
+#footer {
+  margin-top: 1ex;
+  border-top: thin solid black;
+  clear: both;
+  font-size: smaller;
+}
+
+ul.menu {
+  display: block;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+ul.menu li {
+  display: inline;
+  list-style: none;
+  padding: 0px 10px;
 }
 
