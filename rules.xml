@@ -1,0 +1,11 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <replace css:content="title" css:theme="title" />
+    <replace css:content="title" css:theme="#title" />
+    <replace css:content-children="#main"
+      css:theme-children="#content"/>
+</rules>
+
