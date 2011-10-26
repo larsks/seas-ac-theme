@@ -1,15 +1,13 @@
-<!-- Insert content from our user documentation into the theme. -->
+<!-- Insert content from Gitorious into our theme. -->
 <rules
   xmlns="http://namespaces.plone.org/diazo"
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <drop css:content="fieldset.hidden"/>
+  <xi:include href="common.xml"/>
 
-  <xi:include href="rules-common.xml"/>
-
-  <replace css:content-children=".wiki-content" 
+  <replace css:content-children="#content"
     css:theme-children="#content"/>
 </rules>
 

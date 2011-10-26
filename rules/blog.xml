@@ -1,13 +1,15 @@
-<!-- Insert content from Gitorious into our theme. -->
+<!-- Insert content from a blogger.com blog into the theme. -->
 <rules
   xmlns="http://namespaces.plone.org/diazo"
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <xi:include href="rules-common.xml"/>
+  <xi:include href="common.xml"/>
 
-  <replace css:content-children="#content"
+  <drop css:content=".post-share-buttons"/>
+
+  <replace css:content-children="#main"
     css:theme-children="#content"/>
 </rules>
 

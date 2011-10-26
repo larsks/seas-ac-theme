@@ -1,7 +1,7 @@
 STYLESHEETS = main.xsl blog.xsl docs.xsl code.xsl
 GENERATED = $(STYLESHEETS)
 
-%.xsl: rules-%.xml theme/theme.html
+%.xsl: rules/%.xml theme/theme.html
 	diazocompiler -o $@ $< theme/theme.html
 
 all: $(GENERATED)

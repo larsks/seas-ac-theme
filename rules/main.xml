@@ -7,7 +7,7 @@
 
     <drop css:content="fieldset.hidden"/>
 
-    <xi:include href="rules-common.xml"/>
+    <xi:include href="common.xml"/>
 
     <replace css:content-children="#content" css:theme-children="#content"
       if-content=""/>
