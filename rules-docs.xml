@@ -8,9 +8,7 @@
     <replace css:content="title" css:theme="title" />
     <replace css:content-children="title" css:theme-children="#title" />
 
-    <replace css:content-children="#content" css:theme-children="#content"
-      if-content=""/>
-    <replace css:content-children=".wiki-content" css:theme-children="#content"
-      if-content=""/>
+    <replace css:content-children=".wiki-content" 
+      css:theme-children="#content"/>
 </rules>
 
