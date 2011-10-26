@@ -1,0 +1,15 @@
+#content {
+  border: thin solid black;
+  padding: 1ex;
+}
+
+#left {
+  width: 150px;
+  float: left;
+}
+
+#right {
+  width: 800px;
+  margin-left: 150px;
+}
+
