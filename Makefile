@@ -1,19 +1,21 @@
-all: theme.xsl
+GENERATED = main.xsl blog.xsl
 
-test: test.html
+all: $(GENERATED)
 
-test.html: theme.xsl
-	diazorun -x theme.xsl -o $@ content.html
-
-install: test all
+install: all
 	install -d -m 755 /etc/httpd/theme.d
-	install -m 644 theme.xsl /etc/httpd/theme.d/theme.xsl
+	install -m 644 main.xsl /etc/httpd/theme.d/main.xsl
+	install -m 644 blog.xsl /etc/httpd/theme.d/blog.xsl
 	install -m 644 httpd.conf /etc/httpd/conf.d/theme.conf
-	install -m 644 content.html /var/www/html/content.html
+	install -m 644 theme/theme.css /var/www/html/theme.css
+	install -m 644 theme/seaslogo.png /var/www/html/seaslogo.png
 
-theme.xsl: rules.xml theme/theme.html
-	diazocompiler -o $@ rules.xml theme/theme.html
+blog.xsl: rules-blog.xml theme/theme.html
+	diazocompiler -o $@ rules-blog.xml theme/theme.html
+
+main.xsl: rules-main.xml theme/theme.html
+	diazocompiler -o $@ rules-main.xml theme/theme.html
 
 clean:
-	rm -f theme.xsl test.html
+	rm -f $(GENERATED)
 
