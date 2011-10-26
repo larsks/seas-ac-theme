@@ -1,4 +1,4 @@
-STYLESHEETS = main.xsl blog.xsl docs.xsl code.xsl
+STYLESHEETS = main.xsl blog.xsl docs.xsl code.xsl common.xsl
 GENERATED = $(STYLESHEETS)
 
 %.xsl: rules-%.xml theme/theme.html

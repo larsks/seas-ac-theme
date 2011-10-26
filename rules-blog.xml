@@ -1,14 +1,14 @@
 <rules
-    xmlns="http://namespaces.plone.org/diazo"
-    xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <drop css:content=".post-share-buttons"/>
+  <xi:include href="rules-common.xml"/>
 
-    <replace css:content="title" css:theme="title" />
-    <replace css:content-children="title" css:theme-children="#title" />
+  <drop css:content=".post-share-buttons"/>
 
-    <replace css:content-children="#main"
-      css:theme-children="#content"/>
+  <replace css:content-children="#main"
+    css:theme-children="#content"/>
 </rules>
 

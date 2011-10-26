@@ -4,9 +4,6 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <xi:include href="rules-common.xml"/>
-
-  <replace css:content-children="#content"
-    css:theme-children="#content"/>
+  <replace css:content="title" css:theme="title" />
+  <replace css:content-children="title" css:theme-children="#title" />
 </rules>
-
