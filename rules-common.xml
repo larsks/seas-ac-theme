@@ -1,3 +1,6 @@
+<!-- Rules that apply to all (most?) of the sites we're theming. These
+     are used by including them into other rulesets using
+     XInclude directives. -->
 <rules
   xmlns="http://namespaces.plone.org/diazo"
   xmlns:css="http://namespaces.plone.org/diazo/css"

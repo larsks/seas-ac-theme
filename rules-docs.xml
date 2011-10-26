@@ -1,3 +1,4 @@
+<!-- Insert content from our user documentation into the theme. -->
 <rules
   xmlns="http://namespaces.plone.org/diazo"
   xmlns:css="http://namespaces.plone.org/diazo/css"
