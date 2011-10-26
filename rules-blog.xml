@@ -3,8 +3,11 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <drop css:content=".post-share-buttons"/>
+
     <replace css:content="title" css:theme="title" />
-    <replace css:content="title" css:theme-children="#title" />
+    <replace css:content-children="title" css:theme-children="#title" />
+
     <replace css:content-children="#main"
       css:theme-children="#content"/>
 </rules>
