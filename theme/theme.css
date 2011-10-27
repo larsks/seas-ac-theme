@@ -8,13 +8,13 @@ body {
 }
 
 #left {
-  width: 150px;
+  width: 250px;
   float: left;
 }
 
 #right {
-  width: 800px;
-  margin-left: 150px;
+  width: 700px;
+  margin-left: 250px;
 }
 
 #footer {
@@ -36,5 +36,41 @@ ul.menu li {
   display: inline;
   list-style: none;
   padding: 0px 10px;
+}
+
+.navmenu {
+  margin-bottom: 2ex;
+  margin-left: 1ex;
+  margin-right: 1ex;
+  border: thin solid black;
+  padding: 1ex;
+}
+
+.navmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu li {
+  padding: 2px;
+}
+
+.navmenu a:link {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.navmenu a:visited {
+  color: black;
+}
+
+.navmenu a:hover {
+  background-color: #c0c0c0;
+}
+
+.navmenu a:active {
+  text-color: #ff0000;
 }
 
