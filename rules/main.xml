@@ -6,6 +6,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
     <drop css:content="fieldset.hidden"/>
+    <drop css:content=".userLogo"/>
 
     <xi:include href="common.xml"/>
 
