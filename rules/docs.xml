@@ -5,10 +5,11 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
+  <xi:include href="common.xml"/>
+
   <drop css:content="fieldset.hidden"/>
   <drop css:content=".userLogo"/>
-
-  <xi:include href="common.xml"/>
+  <drop css:theme="#child_nav"/>
 
   <replace css:content-children=".wiki-content" 
     css:theme-children="#content"/>

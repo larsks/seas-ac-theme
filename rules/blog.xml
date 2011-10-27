@@ -8,6 +8,7 @@
   <xi:include href="common.xml"/>
 
   <drop css:content=".post-share-buttons"/>
+  <drop css:theme="#child_nav"/>
 
   <replace css:content-children="#main"
     css:theme-children="#content"/>
