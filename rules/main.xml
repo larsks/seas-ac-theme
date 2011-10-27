@@ -10,9 +10,20 @@
 
     <xi:include href="common.xml"/>
 
-    <replace css:content-children="#content" css:theme-children="#content"
+    <replace
+      css:content=".plugin_pagetree_children_list"
+      css:theme-children="#child_nav .navmenu"
+      href="/ac/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;hasRoot=true&amp;pageId=48497156&amp;treeId=0&amp;startDepth=1&amp;ancestors=48497156"
+      method="ssi"/>
+
+    <replace
+      css:content-children="#content"
+      css:theme-children="#content"
       if-content=""/>
-    <replace css:content-children=".wiki-content" css:theme-children="#content"
+
+    <replace
+      css:content-children=".wiki-content"
+      css:theme-children="#content"
       if-content=""/>
 </rules>
 
